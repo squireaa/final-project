@@ -2,6 +2,7 @@ body {
 	background-image: url("images/iphoneOL.jpg");
 	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 
 
@@ -9,4 +10,28 @@ body {
 	height: 530px;
 	width: 300px;
 	margin: 105px 23px;
+	background-color: rgb(150, 227, 150);
 }
+
+/* UR Parking */
+.head-bar {
+	height: 60px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	color: #000066;
+}
+
+.head-bar img {
+	height: 40px;
+	margin-left: .75rem;
+}
+
+.head-bar h1 {
+	margin-left: .75rem;
+}
+
+.head-bar span {
+	margin-left: 2rem;
+}
+
