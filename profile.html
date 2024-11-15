@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Profile</title>
 </head>
 <body>
     <div id="screen">
         <div class="head-bar">
-              <h1>UR Parking</h1>
+            <img src="./images/crest.png" alt="UR Crest">
+            <h1>UR Parking</h1>
+            <span class="material-icons">menu</span>
         </div>
+
+        <div class="profile-block-header">
+            <span class="profile-netid">JD77</span>
+            <input type="button" class="profile-edit" value="Edit">
+            <input type="button" class="profile-logout" value="Logout">
+        </div>
+        <div id="profile-content"></div>
     </div>
+    
+
     <script src="profile.js" type="module"></script>
 </body>
 </html>

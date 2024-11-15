@@ -7,10 +7,10 @@ body {
 
 
 #screen {
-	height: 530px;
-	width: 300px;
-	margin: 105px 23px;
-	background-color: rgb(150, 227, 150);
+	height: 528px;
+	width: 298px;
+	margin: 105px 32px;
+	/* background-color: rgb(150, 227, 150); */
 }
 
 /* UR Parking */
@@ -32,6 +32,55 @@ body {
 }
 
 .head-bar span {
-	margin-left: 2rem;
+	margin-left: 3rem;
 }
 
+.profile-block-header{
+	height: 50px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	color: black;
+	font-size: large;
+}
+.profile-netid{
+	font-weight: bold;
+	margin-left: 20px;
+}
+.profile-edit{
+	margin-left: 4rem;
+	width: 80px;
+	height: 40px;
+	background-color:#D42020;
+	text-align: center;
+	border-color: transparent;
+	color: white;
+}
+
+.profile-logout{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	width: 80px;
+	height: 40px;
+	background-color:#D42020;
+	text-align: center;
+	border-color: transparent;
+	color: white;
+}
+#profile-content{
+	height: 300px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.profile-data{
+	display:grid;
+}
+.profile-item{
+	font-size: large;
+	font-weight: bolder;
+}
+.profile-ans{
+	margin-bottom: 5px;
+	border-bottom: 0.1px solid lightgrey;
+	
+}
