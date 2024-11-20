@@ -45,8 +45,12 @@ body {
 	margin-left: .75rem;
 }
 
-.head-bar span {
-	
+#colored-map {
+	visibility: hidden;
+}
+
+#regular-map {
+	visibility: visible;
 }
 
 .head-bar button {
@@ -80,7 +84,8 @@ body {
 	gap: 10px;
 }
 
-/* .filter-bottom {
+.filter-bottom {
+	visibility: hidden;
 	height: 380px;
 	position: fixed;
 	margin-top: 150px;
@@ -116,4 +121,105 @@ body {
 	font-weight: 600;
 	letter-spacing: .5px;
 	cursor: pointer;
-} */
+}
+
+.filter-closed {
+	visibility: visible;
+	height: 20px;
+	position: fixed;
+	margin-top: 511px;
+	width: 300px;
+	background-color: rgb(212, 32, 32);
+}
+
+.filter-tab-closed {
+	height: 40px;
+	position: fixed;
+	width: 100px;
+	background-color: rgb(212, 32, 32);
+	margin-left: 190px;
+	margin-top: -30px;
+	border: 0;
+	border-radius: 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	justify-content: center;
+	font-weight: 600;
+	letter-spacing: .5px;
+	cursor: pointer;
+}
+
+.search-bar {
+	display: flex;
+	width: 230px;
+	padding: 10px;
+	border-radius: 999px;
+	border: 2px solid black;
+}
+
+.filter-white p {
+	font-size: x-small;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.checkbox-area {
+	display: flex;
+	flex-direction: column;
+}
+
+.location-buttons {
+	display: flex;
+	gap: 5px;
+	overflow: scroll;
+	width: 250px;
+	margin-bottom: 5px;
+	margin-top: -15px;
+}
+
+.location-buttons button {
+	width: 200px;
+	height: 40px;
+	flex: 0 0 auto;
+	font-weight: 800;
+	background-color: rgb(212, 32, 32);
+	color: white;
+	border: 0;
+	cursor: pointer;
+}
+
+.parking-buttons {
+	display: flex;
+	gap: 5px;
+	overflow: scroll;
+	width: 250px;
+	margin-bottom: -10px;
+	margin-top: -15px;
+}
+
+.parking-buttons button {
+	width: 60px;
+	height: 40px;
+	flex: 0 0 auto;
+	font-weight: 800;
+	background-color: rgb(212, 32, 32);
+	color: white;
+	border: 0;
+	cursor: pointer;
+}
+
+#apply-button {
+	display: block;
+	width: 100px;
+	margin-inline: auto;
+	margin-top: 10px;
+	height: 40px;
+	font-weight: 800;
+	border-radius: 0;
+	background-color: rgb(212, 32, 32); 
+	color: white;
+	border: 0;
+	cursor: pointer;
+}

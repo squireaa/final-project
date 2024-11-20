@@ -10,7 +10,8 @@
 </head>
 <body>
     <div id="screen">
-        <img src="./images/parking_map.png" alt="parking map of campus">
+        <img src="./images/parking_map.png" alt="parking map of campus" id="regular-map">
+        <img src="./images/colored-map.png" alt="parking map of campus" id="colored-map">
         <div class="head-bar">
             <img src="./images/crest.png" alt="UR Crest">
             <h1>UR Parking</h1>
@@ -48,15 +49,53 @@
                 </li>
             </ul>
         </nav>
-        <div class="filter-bottom" id="filter-tab">
-            <div class="filter-tab">
+        <div class="filter-bottom" id="filter-up">
+            <div class="filter-tab" id="filter-tab">
                 <span class="material-icons">
                     filter_alt
                 </span>
                 Filter
             </div>
             <div class="filter-white">
-                Parking lot
+                <input type="text" placeholder="Search..." class="search-bar">
+                <p>Search for any building, parking lot, or permit</p>
+                <h3>Parking Lot:</h3>
+                <div class="parking-buttons" id="parking-buttons">
+                    <button>X86</button>
+                    <button>F20</button>
+                    <button>R15</button>
+                    <button>C65</button>
+                    <button>E10</button>
+                </div>
+                <h3>Location:</h3>
+                <div class="location-buttons" id="location-buttons">
+                    <button>Weinstein Recreation Center</button>
+                    <button>Heilman Dining Center</button>
+                    <button>Robins Stadium</button>
+                </div>
+                <div class="checkbox-area">
+                    <label>
+                        <input type="checkbox">
+                        Close Lots Only
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        My Permit Only
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Hide Full Lots
+                    </label>
+                </div>
+                <button id="apply-button">Apply</button>
+            </div>
+        </div>
+        <div class="filter-closed" id="filter-closed">
+            <div class="filter-tab-closed">
+                <span class="material-icons">
+                    filter_alt
+                </span>
+                Filter
             </div>
         </div>
     </div>
