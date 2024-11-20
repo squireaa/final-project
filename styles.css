@@ -10,11 +10,25 @@ body {
 	height: 530px;
 	width: 300px;
 	margin: 105px 23px;
-	background-color: rgb(150, 227, 150);
+	overflow: scroll;
+	position: relative;
+	/* background-color: rgb(150, 227, 150); */
+}
+
+#screen > img {
+	transform: translate(-10%, -10%) scale(.7);
+	position: absolute;
+	z-index: -1;
+}
+
+#screen::-webkit-scrollbar { /* For Chrome, Safari, and Opera */
+	display: none;
 }
 
 /* UR Parking */
 .head-bar {
+	position: fixed;
+	width: 300px;
 	height: 60px;
 	background-color: white;
 	display: flex;
@@ -32,6 +46,74 @@ body {
 }
 
 .head-bar span {
-	margin-left: 2rem;
+	
 }
 
+.head-bar button {
+	width:35px;
+	margin-left: 2rem;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+
+.navigation-bar {
+	background-color: white;	
+	position: fixed;
+	margin-top: 60px;
+	width: 300px;
+	height: 168px;
+	visibility: hidden;
+}
+
+.navigation-bar ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.navigation-bar li {
+	border: 1px solid lightgray;
+	padding: .5rem;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+/* .filter-bottom {
+	height: 380px;
+	position: fixed;
+	margin-top: 150px;
+	width: 300px;
+	background-color: rgb(212, 32, 32);
+}
+
+.filter-white {
+	width: 255px;
+	height: 330px;
+	background-color: white;
+	display: block;
+	margin-inline: auto;
+	margin-top: 15px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.filter-tab {
+	height: 40px;
+	position: fixed;
+	width: 100px;
+	background-color: rgb(212, 32, 32);
+	margin-left: 190px;
+	margin-top: -30px;
+	border: 0;
+	border-radius: 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	justify-content: center;
+	font-weight: 600;
+	letter-spacing: .5px;
+	cursor: pointer;
+} */

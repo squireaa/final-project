@@ -10,12 +10,54 @@
 </head>
 <body>
     <div id="screen">
+        <img src="./images/parking_map.png" alt="parking map of campus">
         <div class="head-bar">
             <img src="./images/crest.png" alt="UR Crest">
             <h1>UR Parking</h1>
-            <span class="material-icons">
-                menu
-            </span>
+            <button id="burger">
+                <span class="material-icons">
+                    menu
+                </span>
+            </button>
+        </div>
+        <nav class="navigation-bar" id="nav-menu">
+            <ul>
+                <li>
+                    <span class="material-icons">
+                        home
+                    </span>
+                    Home
+                </li>
+                <li>
+                    <span class="material-icons">
+                        description
+                    </span>
+                    Parking Rules
+                </li>
+                <li>
+                    <span class="material-icons">
+                        warning
+                    </span>
+                    Pay a Ticket
+                </li>
+                <li>
+                    <span class="material-icons">
+                        person
+                    </span>
+                    Profile
+                </li>
+            </ul>
+        </nav>
+        <div class="filter-bottom" id="filter-tab">
+            <div class="filter-tab">
+                <span class="material-icons">
+                    filter_alt
+                </span>
+                Filter
+            </div>
+            <div class="filter-white">
+                Parking lot
+            </div>
         </div>
     </div>
     <script src="map.js" type="module"></script>
