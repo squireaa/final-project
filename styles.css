@@ -35,6 +35,8 @@ body {
 	margin-left: 3rem;
 }
 
+/* Profile CSS */
+/* Profile Block */
 .profile-block-header{
 	height: 50px;
 	background-color: white;
@@ -47,30 +49,47 @@ body {
 	font-weight: bold;
 	margin-left: 20px;
 }
-.profile-edit{
-	margin-left: 4rem;
-	width: 80px;
-	height: 40px;
-	background-color:#D42020;
+.profile-button-container{
+    display: flex;           
+    justify-content: center; 
+    gap: 10px;               
+}
+.profile-button{
+	display: inline-block;
 	text-align: center;
+	background-color:#D42020;
 	border-color: transparent;
 	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: medium;
 }
 
-.profile-logout{
-	margin-left: 1rem;
-	margin-right: 1rem;
-	width: 80px;
-	height: 40px;
-	background-color:#D42020;
-	text-align: center;
-	border-color: transparent;
-	color: white;
+.profile-button:hover{
+    background-color: #A61818; 
 }
-#profile-content{
+.profile-edit-button{
+	padding: 6px 20px;
+	margin-left: 4rem;
+}
+
+.profile-logout-button{
+	padding: 6px 10px;
+	margin-right: 1rem;
+}
+
+.profile-save-button{
+	margin-left: 8.5rem;
+	padding: 6px 20px;
+}
+
+/* Profile Content */
+#profile-content, #profile-edit-content{
 	height: 300px;
 	margin-left: 20px;
 	margin-top: 10px;
+	
 }
 .profile-data{
 	display:grid;
@@ -82,5 +101,18 @@ body {
 .profile-ans{
 	margin-bottom: 5px;
 	border-bottom: 0.1px solid lightgrey;
-	
+}
+
+/* Editable Input */
+.profile-answer-input {
+    width: 100%;
+	font-size: small;
+    padding: 2.8px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+.profile-edit-hidden {
+    display: none;
 }

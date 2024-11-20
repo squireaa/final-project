@@ -1,0 +1,6 @@
+59a3c78 2024-11-15 | updated (HEAD -> 2-profile-page) [Skyler He]
+7d10910 2024-11-08 | Merge pull request #5 from squireaa/1-map-page (origin/integration, origin/HEAD, integration) [Aaron]
+8285f7a 2024-11-08 | finished head bar (origin/1-map-page) [squireaa]
+eff1809 2024-11-08 | Merge pull request #4 from squireaa/main [Aaron]
+995b004 2024-11-08 | Set up file system (origin/main) [squireaa]
+0736107 2024-11-08 | First commit [squireaa]

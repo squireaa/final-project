@@ -9,20 +9,30 @@
 </head>
 <body>
     <div id="screen">
+        <!-- Header -->
         <div class="head-bar">
             <img src="./images/crest.png" alt="UR Crest">
             <h1>UR Parking</h1>
             <span class="material-icons">menu</span>
         </div>
 
+        <!-- Profile Header -->
         <div class="profile-block-header">
             <span class="profile-netid">JD77</span>
-            <input type="button" class="profile-edit" value="Edit">
-            <input type="button" class="profile-logout" value="Logout">
+            <div class="profile-button-container">
+                <!-- Buttons for toggling modes -->
+                <button id="profile-edit-id" class="profile-button profile-edit-button">Edit</button>
+                <button id="profile-save-id" class="profile-button profile-save-button hidden">Save</button>
+                <a href="map.html" class="profile-button profile-logout-button">Logout</a>
+            </div>
         </div>
+
+        <!-- Profile Content for View Mode -->
         <div id="profile-content"></div>
+
+        <!-- Profile Content for Edit Mode -->
+        <div id="profile-edit-content" class="profile-edit-hidden"></div>
     </div>
-    
 
     <script src="profile.js" type="module"></script>
 </body>
