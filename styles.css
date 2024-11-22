@@ -130,6 +130,7 @@ body {
 
 .profile-edit-hidden {
     display: none;
+}
 
 #colored-map {
 	visibility: hidden;
@@ -308,4 +309,220 @@ body {
 	color: white;
 	border: 0;
 	cursor: pointer;
+}
+
+/* Ticket Styling */
+.bScreen{
+	display: block;
+	height: 470px;
+	background-color:white;
+}
+
+.grid1{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.grid2{
+	font-size: medium;
+	margin-top: 5%;
+
+	border: 0.3mm solid black;
+}
+
+.fineSubgrid{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.pay-a-fine-txt, .caution-icon{
+	text-align: center;
+}
+
+.pay1{
+	display: block;
+	color: white;
+	background-color: red;
+	text-align: center;
+	
+	padding-top: 7%;
+
+	margin-top: 10%;
+	margin-bottom: 10%;
+
+	margin-right: 15%;
+
+	text-decoration: none;
+}
+
+.f1txt{
+	font-size: large;
+	margin-left: 10%;
+}
+
+.caution-icon i{
+	font-size: 300%;
+	margin-top: 2%;
+}
+
+.pay-a-fine-txt{
+	margin-top: 4%;
+	margin-left: 10%;
+	font-size: 190%;
+
+	font-weight: bolder;
+}
+
+.tixTitle{
+	font-weight: bolder;
+	text-align: center;
+
+	margin-top: 5%;
+
+}
+
+.tix1Desc{
+	text-align: center;
+	font-weight: 65%;
+
+	margin-top: 8.5%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.paymentCont{
+	margin-top: 10%;
+}
+
+.CCNum{
+	font-size: smaller;
+	margin-left: 3%;
+}
+
+.payName{
+	font-size: smaller;
+	margin-left: 3%;
+}
+
+.ccInput{
+	margin-left: 4%;
+	width: 50%;
+}
+
+.PayNameInput{
+	margin-left: 17.5%;
+	width: 50%;
+}
+
+.PayNameInput, .payName{
+	margin-top: 7%;
+}
+
+.CCV{
+	font-size: smaller;
+	margin-left: 3%;
+}
+
+.CCVInput{
+	margin-left: 3%;
+	width: 15%;
+}
+
+.CCV, .CCVInput{
+	margin-top: 8%;
+}
+
+.payDate{
+	font-size: smaller;
+	margin-left: 14%;
+}
+
+.dateInput{
+	margin-left: 2%;
+	width: 25%;
+}
+
+.paymentButtonCont{
+	margin-top: 15%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.tixPay{
+	display: block;
+	color: white;
+	background-color: red;
+
+	padding-top: 9%;
+	padding-bottom: 9%;
+
+	width:60%;
+
+	margin-left: 20%;
+
+	text-align:center;
+	text-decoration: none;
+}
+
+.tixDisp{
+	font-size: smaller;
+	display: block;
+	color: white;
+	background-color: red;
+
+	padding-top: 10%;
+	padding-bottom: 4%;
+
+	width:70%;
+
+	margin-left: 10%;
+
+	text-align:center;
+	text-decoration: none;
+
+	grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.tixDisputeText{
+	margin-top: 8%;
+	margin-left: 6%;
+}
+
+.dispButtonCont{
+	margin-top: 7%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.DispBack{
+	display: block;
+	color: white;
+	background-color: red;
+
+	padding-top: 9%;
+	padding-bottom: 9%;
+
+	width:60%;
+
+	margin-left: 20%;
+
+	text-align:center;
+	text-decoration: none;
+}
+
+.DispSubmit{
+	display: block;
+	color: white;
+	background-color: red;
+
+	padding-top: 9%;
+	padding-bottom: 9%;
+
+	width:60%;
+
+	margin-left: 20%;
+
+	text-align:center;
+	text-decoration: none;
 }
