@@ -353,7 +353,7 @@ a:hover, a:visited, a:link, a:active {
 .pay1{
 	display: block;
 	color: white;
-	background-color: red;
+	background-color: rgb(212, 32, 32); ;
 	text-align: center;
 	
 	padding-top: 7%;
@@ -462,7 +462,7 @@ a:hover, a:visited, a:link, a:active {
 .tixPay{
 	display: block;
 	color: white;
-	background-color: red;
+	background-color: rgb(212, 32, 32); ;
 
 	padding-top: 9%;
 	padding-bottom: 9%;
@@ -479,7 +479,7 @@ a:hover, a:visited, a:link, a:active {
 	font-size: smaller;
 	display: block;
 	color: white;
-	background-color: red;
+	background-color: rgb(212, 32, 32); ;
 
 	padding-top: 10%;
 	padding-bottom: 4%;
@@ -509,7 +509,7 @@ a:hover, a:visited, a:link, a:active {
 .DispBack{
 	display: block;
 	color: white;
-	background-color: red;
+	background-color: rgb(212, 32, 32); ;
 
 	padding-top: 9%;
 	padding-bottom: 9%;
@@ -525,7 +525,7 @@ a:hover, a:visited, a:link, a:active {
 .DispSubmit{
 	display: block;
 	color: white;
-	background-color: red;
+	background-color: rgb(212, 32, 32); ;
 
 	padding-top: 9%;
 	padding-bottom: 9%;
