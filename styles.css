@@ -331,6 +331,7 @@ a:hover, a:visited, a:link, a:active {
 .grid1{
 	display: grid;
 	grid-template-columns: 2fr 1fr;
+	margin-top: 60px;
 }
 
 .grid2{
