@@ -115,15 +115,15 @@ body {
 	font-weight: bolder;
 }
 .profile-ans{
-	margin-bottom: 5px;
+	margin-bottom: 18px;
 	border-bottom: 0.1px solid lightgrey;
+	font-size: small;
 }
 
 /* Editable Input */
 .profile-answer-input {
     width: 100%;
 	font-size: small;
-    padding: 2.8px;
     border: 1px solid #ccc; 
     border-radius: 4px; 
     box-sizing: border-box; 
