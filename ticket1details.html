@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Map</title>
+</head>
+<body>
+    <div id="screen">
+        <div class="head-bar">
+            <img src="./images/crest.png" alt="UR Crest">
+            <h1>UR Parking</h1>
+            <button id="burger">
+                <span class="material-icons">
+                    menu
+                </span>
+            </button>
+        </div>
+        <nav class="navigation-bar" id="nav-menu">
+            <ul>
+                <a href="map.html">
+                    <li>
+                        <span class="material-icons">
+                            home
+                        </span>
+                        Home
+                    </li>
+                </a>
+                <li>
+                    <span class="material-icons">
+                        description
+                    </span>
+                    Parking Rules
+                </li>
+                <li>
+                    <span class="material-icons">
+                        warning
+                    </span>
+                    Pay a Ticket
+                </li>
+                <a href="profile.html">
+                    <li>
+                        <span class="material-icons">
+                            person
+                        </span>
+                        Profile
+                    </li>
+                </a>
+                
+            </ul>
+        </nav>
+        <div class = "grid1">
+            <div class = "pay-a-fine-txt">Pay a Fine</div>
+            <div class = "caution-icon"><i class = "stop material-icons">report</i></div>
+        </div>
+        <div class = "tixTitle">9/26/24 - Parked in Commuter lot.</div> 
+        <div class = "tix1Desc">Example Description: This student parked in a lot that was designated a commuter lot. This student does not have a commuter permit.</div>
+        <div class = "paymentCont">
+            <span class = "CCNum">Card Number</span><input class="ccInput" id="payCC" type="text" placeholder="Card Number"/>
+            <span class = "payName">Name </span><input class="PayNameInput" id="payName" type="text" placeholder="Full Name"/>
+            <span class = "CCV">CCV </span><input class="CCVInput" id="payCCv" type="text" placeholder="CCV"/><span class = "payDate">Exp. Date</span><input class="dateInput" id="payDate" type="date"/>
+        </div>
+        <div class = "paymentButtonCont">
+            <a class = "tixPay" href = "map.html">Pay</a>
+            <a class = "tixDisp" href = "disputeTix1.html">Dispute Ticket</a>
+        </div>
+        </div>
+        <script src="ticket.js"></script>
+</body>
+</html>
