@@ -5,6 +5,10 @@ body {
 	font-family: 'Inter', sans-serif;
 }
 
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
 
 #screen {
 	height: 530px;
@@ -43,6 +47,7 @@ body {
 
 .head-bar h1 {
 	margin-left: .75rem;
+	text-decoration: none;
 }
 
 
@@ -170,6 +175,10 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 10px;
+}
+
+.navigation-bar a {
+	color: black;
 }
 
 .filter-bottom {
