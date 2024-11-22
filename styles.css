@@ -53,6 +53,7 @@ body {
 /* Profile CSS */
 /* Profile Block */
 .profile-block-header{
+	margin-top: 60px;
 	height: 50px;
 	background-color: white;
 	display: flex;
@@ -131,6 +132,7 @@ body {
 .profile-edit-hidden {
     display: none;
 }
+
 #colored-map {
 	visibility: hidden;
 }
