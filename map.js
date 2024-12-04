@@ -6,6 +6,11 @@ const filterUp = document.getElementById("filter-up")
 const applyButton = document.getElementById("apply-button")
 const regularMap = document.getElementById("regular-map")
 const coloredMap = document.getElementById("colored-map")
+
+const parkingLeft = document.getElementById("parking-left")
+const parkingRight = document.getElementById("parking-right")
+const locationLeft = document.getElementById("location-left")
+const locationRight = document.getElementById("parking-right")
 // const parkingButtons = document.getElementById("parking-buttons")
 // const filterClosed = document.getElementById("filter-closed")
 // const filterBottom = document.getElementById("filter-bottom")
@@ -59,3 +64,49 @@ locationButtons.forEach(button => {
         }   
     })
 })
+
+function scrollContainerToCenter(containerId) {
+    const container = document.getElementById(containerId)
+    const scrollLeft = container.scrollWidth / 2 - container.clientWidth / 2
+    const scrollTop = container.scrollHeight / 2 - container.clientHeight / 2
+    container.scrollTo(scrollLeft, scrollTop)
+}
+
+
+scrollContainerToCenter("screen")
+
+// DOMContentLoaded needed to prevent bug in carosels
+// found on mdn docs
+document.addEventListener('DOMContentLoaded', () => {
+    function scrollLeft(carouselId) {
+        const carousel = document.getElementById(carouselId);
+        if (carousel) {
+            carousel.scrollBy({
+                left: -150,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    function scrollRight(carouselId) {
+        const carousel = document.getElementById(carouselId);
+        if (carousel) {
+            carousel.scrollBy({
+                left: 150,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    const locationLeft = document.getElementById('location-left')
+    const locationRight = document.getElementById('location-right')
+    const parkingLeft = document.getElementById('parking-left')
+    const parkingRight = document.getElementById('parking-right')
+
+    locationLeft.addEventListener('click', () => scrollLeft('location-buttons'))
+    locationRight.addEventListener('click', () => scrollRight('location-buttons'))
+    parkingLeft.addEventListener('click', () => scrollLeft('parking-buttons'))
+    parkingRight.addEventListener('click', () => scrollRight('parking-buttons'))
+});
+
+

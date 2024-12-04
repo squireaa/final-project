@@ -59,13 +59,13 @@
         <div class = "tixTitle">9/26/24 - Parked in Commuter lot.</div> 
         <div class = "tix1Desc">Example Description: This student parked in a lot that was designated a commuter lot. This student does not have a commuter permit.</div>
         <div class = "paymentCont">
-            <span class = "CCNum">Card Number</span><input class="ccInput" id="payCC" type="text" placeholder="Card Number"/>
+            <span class = "CCNum">Card Number</span><input class="ccInput" id="payCC" type="number" placeholder="Card Number"/>
             <span class = "payName">Name </span><input class="PayNameInput" id="payName" type="text" placeholder="Full Name"/>
             <span class = "CCV">CCV </span><input class="CCVInput" id="payCCv" type="text" placeholder="CCV"/><span class = "payDate">Exp. Date</span><input class="dateInput" id="payDate" type="date"/>
         </div>
         <div class = "paymentButtonCont">
-            <a class = "tixPay" href = "map.html">Pay</a>
-            <a class = "tixDisp" href = "disputeTix1.html">Dispute Ticket</a>
+            <a class = "tixPay" id="pay-button" href = "map.html">Pay</a>
+            <a class = "tixDisp" href = "ticket-dispute.html">Dispute Ticket</a>
         </div>
         </div>
         <script src="ticket.js"></script>

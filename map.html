@@ -62,22 +62,35 @@
                 Filter
             </div>
             <div class="filter-white">
-                <input type="text" placeholder="Search..." class="search-bar">
+                <div class="search-container">
+                    <span class="material-icons search-icon">search</span>
+                    <input type="text" placeholder="Search..." class="search-bar">
+                </div>                
                 <p>Search for any building, parking lot, or permit</p>
                 <h3>Parking Lot:</h3>
-                <div class="parking-buttons" id="parking-buttons">
-                    <button>X86</button>
-                    <button>F20</button>
-                    <button>R15</button>
-                    <button>C65</button>
-                    <button>E10</button>
+                <div class="carousel-container top">
+                    <button class="scroll-button" id="parking-left">&lt;</button>
+                    <div class="parking-buttons" id="parking-buttons">
+                        <button>X86</button>
+                        <button>F20</button>
+                        <button>R15</button>
+                        <button>C65</button>
+                        <button>E10</button>
+                    </div>
+                    <button class="scroll-button" id="parking-right">&gt;</button>
                 </div>
-                <h3>Location:</h3>
-                <div class="location-buttons" id="location-buttons">
-                    <button>Weinstein Recreation Center</button>
-                    <button>Heilman Dining Center</button>
-                    <button>Robins Stadium</button>
+                
+                <h3 class="location-title">Location:</h3>
+                <div class="carousel-container bot">
+                    <button class="scroll-button" id="location-left">&lt;</button>
+                    <div class="location-buttons" id="location-buttons">
+                        <button>Weinstein Recreation Center</button>
+                        <button>Heilman Dining Center</button>
+                        <button>Robins Stadium</button>
+                    </div>
+                    <button class="scroll-button" id="location-right">&gt;</button>
                 </div>
+                
                 <div class="checkbox-area">
                     <label>
                         <input type="checkbox">
