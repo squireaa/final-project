@@ -36,12 +36,22 @@ function toggleMode(isEditMode) {
 
 // Save Updated Data
 function saveData() {
+    let hasChanges = false; // Track if any changes are made
     document.querySelectorAll(".profile-answer-input").forEach((input, index) => {
-        data[index].answer = input.value;
+        if (data[index].answer !== input.value) {
+            hasChanges = true; // Flag if there's a difference
+            data[index].answer = input.value; // Update the data
+        }
     });
-    console.log("Updated Data:", data); // Log or save the updated data
-    showSuccessBanner(); // Show success banner
+
+    if (hasChanges) {
+        console.log("Updated Data:", data); // Log or save the updated data
+        showSuccessBanner(); // Show success banner only if changes are made
+    } else {
+        console.log("No changes were made.");
+    }
 }
+
 
 // Show Success Banner
 function showSuccessBanner() {
