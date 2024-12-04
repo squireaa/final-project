@@ -139,6 +139,23 @@ a:hover, a:visited, a:link, a:active {
     display: none;
 }
 
+.profile-popup-banner {
+    position: absolute; 
+    top: 10px; 
+    left: 50%; 
+  	transform: translateX(-50%); /* center the banner */
+    background-color: #4caf50; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 10px; 
+    font-weight: bold; 
+	
+    
+}
+
+
+
 #colored-map {
 	visibility: hidden;
 }
