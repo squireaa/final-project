@@ -139,7 +139,7 @@ a:hover, a:visited, a:link, a:active {
     display: none;
 }
 
-.profile-popup-banner {
+.popup-banner {
     position: absolute; 
     top: 10px; 
     left: 50%; 

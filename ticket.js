@@ -10,3 +10,8 @@ function openMenu() {
 }
 
 menuButton.addEventListener('click', openMenu);
+
+document.getElementById("tix-pay-button").addEventListener("click", () => {
+    // Set a flag in localStorage
+    localStorage.setItem("paymentSuccess", "true");
+});

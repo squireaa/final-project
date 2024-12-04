@@ -110,3 +110,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+window.addEventListener("DOMContentLoaded", () => {
+    // Check for the flag in localStorage
+    const paymentSuccess = localStorage.getItem("paymentSuccess");
+    
+    if (paymentSuccess === "true") {
+        // Show success banner
+        const screen = document.getElementById("screen");
+        const banner = document.createElement("div");
+        banner.className = "popup-banner";
+        banner.textContent = "Payment Successful!";
+        
+        screen.appendChild(banner);
+        
+        // Remove banner after 3 seconds
+        setTimeout(() => {
+            screen.removeChild(banner);
+        }, 3000);
+        
+        // Clear the flag
+        localStorage.removeItem("paymentSuccess");
+    }
+});
