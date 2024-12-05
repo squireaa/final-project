@@ -16,4 +16,9 @@ document.getElementById("pay-button").addEventListener("click", () => {
     sessionStorage.setItem("deleteFine", "true")
 });
 
+document.getElementById("disp-button").addEventListener("click", () => {
+    // Set a flag in localStorage
+    sessionStorage.setItem("disputed", "true")
+});
+
 menuButton.addEventListener('click', openMenu);

@@ -5,6 +5,7 @@ const filterTabClosed = document.getElementById("filter-closed")
 const filterUp = document.getElementById("filter-up")
 const applyButton = document.getElementById("apply-button")
 const regularMap = document.getElementById("regular-map")
+const topBanner = document.getElementById("head-bar")
 const coloredMap = document.getElementById("colored-map")
 
 const parkingLeft = document.getElementById("parking-left")
@@ -121,11 +122,11 @@ window.addEventListener("DOMContentLoaded", () => {
         banner.className = "popup-banner";
         banner.textContent = "Payment Successful!";
         
-        screen.appendChild(banner);
+        topBanner.appendChild(banner);
         
         // Remove banner after 3 seconds
         setTimeout(() => {
-            screen.removeChild(banner);
+            topBanner.removeChild(banner);
         }, 3000);
         
         // Clear the flag
