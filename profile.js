@@ -56,7 +56,7 @@ function saveData() {
 // Show Success Banner
 function showSuccessBanner() {
     const banner = document.createElement("div");
-    banner.className = "profile-popup-banner";
+    banner.className = "popup-banner";
     banner.textContent = "Successfully Edited!";
 
     // Append the banner to the #screen div    
