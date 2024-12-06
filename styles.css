@@ -98,6 +98,7 @@ a:hover, a:visited, a:link, a:active {
 .profile-logout-button{
 	padding: 6px 10px;
 	margin-right: 1rem;
+	width: 55px;
 }
 
 .profile-save-button{
@@ -137,6 +138,23 @@ a:hover, a:visited, a:link, a:active {
 .profile-edit-hidden {
     display: none;
 }
+
+.popup-banner {
+    position: absolute; 
+    top: 10px; 
+    left: 50%; 
+  	transform: translateX(-50%); /* center the banner */
+    background-color: #4caf50; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 10px; 
+    font-weight: bold; 
+	
+    
+}
+
+
 
 #colored-map {
 	visibility: hidden;
@@ -249,11 +267,39 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .search-bar {
+	border: 0;
+}
+
+.search-bar:focus {
+	outline: none;
+}
+
+.search-container {
 	display: flex;
 	width: 230px;
 	padding: 10px;
 	border-radius: 999px;
 	border: 2px solid black;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.scroll-button {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+	font-weight: bold;
+	width: 15px;
+	margin-left: -5px;
+}
+
+.location-title {
+	margin-bottom: 3px;
 }
 
 .filter-white p {
@@ -273,7 +319,6 @@ a:hover, a:visited, a:link, a:active {
 	overflow: scroll;
 	width: 250px;
 	margin-bottom: 5px;
-	margin-top: -15px;
 }
 
 .location-buttons button {
@@ -307,12 +352,16 @@ a:hover, a:visited, a:link, a:active {
 	cursor: pointer;
 }
 
+.location-buttons::-webkit-scrollbar, .parking-buttons::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
 #apply-button {
 	display: block;
 	width: 100px;
 	margin-inline: auto;
 	margin-top: 10px;
-	height: 40px;
+	height: 35px;
 	font-weight: 800;
 	border-radius: 0;
 	background-color: rgb(212, 32, 32); 
@@ -525,7 +574,7 @@ a:hover, a:visited, a:link, a:active {
 .DispSubmit{
 	display: block;
 	color: white;
-	background-color: rgb(212, 32, 32); ;
+	background-color: rgb(212, 32, 32);
 
 	padding-top: 9%;
 	padding-bottom: 9%;

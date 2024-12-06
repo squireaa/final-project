@@ -6,7 +6,9 @@ const profileEditContent = document.getElementById("profile-edit-content");
 const editButton = document.getElementById("profile-edit-id");
 const saveButton = document.getElementById("profile-save-id");
 const logoutButton = document.querySelector(".profile-logout-button");
-
+const menuButton = document.getElementById("burger");
+const navigationMenu = document.getElementById("nav-menu");
+const screen = document.getElementById("screen");
 // Populate Content
 function renderContent(isEditMode = false) {
     const container = isEditMode ? profileEditContent : profileContent;
@@ -34,10 +36,35 @@ function toggleMode(isEditMode) {
 
 // Save Updated Data
 function saveData() {
+    let hasChanges = false; // Track if any changes are made
     document.querySelectorAll(".profile-answer-input").forEach((input, index) => {
-        data[index].answer = input.value;
+        if (data[index].answer !== input.value) {
+            hasChanges = true; // Flag if there's a difference
+            data[index].answer = input.value; // Update the data
+        }
     });
-    console.log("Updated Data:", data); // Log or save the updated data
+
+    if (hasChanges) {
+        console.log("Updated Data:", data); // Log or save the updated data
+        showSuccessBanner(); // Show success banner only if changes are made
+    } else {
+        console.log("No changes were made.");
+    }
+}
+
+
+// Show Success Banner
+function showSuccessBanner() {
+    const banner = document.createElement("div");
+    banner.className = "popup-banner";
+    banner.textContent = "Successfully Edited!";
+
+    // Append the banner to the #screen div    
+    screen.appendChild(banner);
+    // Remove banner after 3 seconds
+    setTimeout(() => {
+        screen.removeChild(banner);
+    }, 3000);
 }
 
 // Event Listeners
@@ -46,14 +73,6 @@ saveButton.addEventListener("click", () => {
     saveData();
     toggleMode(false);
 });
-
-// Initial Render in View Mode
-renderContent();
-
-
-
-const menuButton = document.getElementById("burger")
-const navigationMenu = document.getElementById("nav-menu")
 
 function openMenu() {
     if (navigationMenu.style.visibility === "visible") {
@@ -64,3 +83,6 @@ function openMenu() {
 }
 
 menuButton.addEventListener('click', openMenu);
+
+// Initial Render in View Mode
+renderContent();
